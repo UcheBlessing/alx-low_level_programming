@@ -4,32 +4,38 @@
 
 /**
  *
- *  * print_alphabet - function to print abc
+ * print_alphabet_x10 - prints alphabet 10 times
  *
- *   * 
+ *    * Return: always 0;
  *
- *    * Return: always 0
- *
- *     */
+ **/
 
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 
-{ 
+{
 
-	      char c;
+		char i;
 
-	            for (c = ‘a’; c <= ‘z’; c++)
+			char h;
 
-		    {
 
-			    	_putchar(c);
 
-		    }
+				for (h = 0; h <= 9; h++)
 
-		    _putchar(‘\n’);
+						{
+
+									for (i = 'a'; i <= 'z'; i++)
+
+												{
+
+																_putchar(i);
+
+																		}
+
+											_putchar('\n');
+
+												}
 
 }
-
-
