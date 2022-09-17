@@ -1,21 +1,16 @@
+#ifndef FILE_HOLBERTON
 
-#ifndef MAIN_H
-
-#define MAIN_H
-
+#define FILE_HOLBERTON
 
 
-/**
 
-*main - header file for protoypes
+int _putchar(char c);
 
-*void protoypes (void)
+int _isupper(int c);
 
-*int protoypes (int)
+int _isdigit(int c);
 
-*/
-
-
+int mul(int a, int b);
 
 void print_numbers(void);
 
@@ -33,14 +28,6 @@ void print_triangle(int size);
 
 void print_number(int n);
 
-int _putchar(char);
-
-int _isupper(int);
-
-int _isdigit(int);
-
-int mul(int, int);
 
 
-
-#endif /* MAIN_H */
+#endif
