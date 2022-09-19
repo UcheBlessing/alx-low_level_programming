@@ -1,21 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
-puts - prints a string to stdout
- *
- *   * @str: pointer to the string to print
- *
- *    */
+ * _puts - function that prints a string foolowed by new line to stdout
+ * @str: string to print
+ * Return: void
+ */
 
 void _puts(char *str)
 {
-		int i;
+	int i;
+	char c;
 
-			for (i = 0; str[i] != '\0'; i++)
-					{
-						_putchar(str[i]);
-
-									}
-
-				_putchar('\n');
+	c = *str;
+	i = 0;
+	while (c)
+	{
+		_putchar(c);
+		i++;
+		c = *(str + i);
+	}
+	_putchar('\n');
 }
