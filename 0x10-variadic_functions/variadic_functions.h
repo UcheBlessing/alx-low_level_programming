@@ -1,8 +1,12 @@
-#ifndef V_FUNCTION_H_FILE
-#define V_FUNCTION_H_FILE
+#ifndef VARIADIC_FUNCTIONS_H_INCLUDED
+#define VARIADIC_FUNCTIONS_H_INCLUDED
 
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
+#include <stdarg.h>
+#include <stdio.h>
+
+int sum_them_all(const unsigned int, ...);
+void print_numbers(const char *, const unsigned int, ...);
+void print_strings(const char *, const unsigned int, ...);
+void print_all(const char * const, ...);
 
 #endif
